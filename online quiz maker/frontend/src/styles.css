@@ -1,0 +1,214 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav ul {
+    list-style-type: none;
+}
+  
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.navbar{
+    background-color: aqua;
+}
+
+  
+.create-quiz, .take-quiz, .quiz-list {
+    margin-top: 20px;
+}
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, select, button {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+}
+  
+.question {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+} */
+
+
+:root {
+    --primary-bg: #1a1a2e;
+    --secondary-bg: #16213e;
+    --text-color: #e0e0e0;
+    --accent-color: #0f3460;
+    --highlight-color: #e94560;
+    --success-color: #4caf50;
+  }
+  
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+  }
+  
+  .App {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  nav {
+    background-color: var(--secondary-bg);
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--highlight-color);
+  }
+  
+  .create-quiz, .take-quiz, .quiz-list {
+    background-color: var(--secondary-bg);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: var(--highlight-color);
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, select, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--accent-color);
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+    border-color: var(--highlight-color);
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--highlight-color);
+  }
+  
+  .question {
+    margin-bottom: 20px;
+    border: 1px solid var(--accent-color);
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  .quiz-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .quiz-list ul li {
+    margin-bottom: 10px;
+  }
+  
+  .quiz-list ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .quiz-list ul li a:hover {
+    color: var(--highlight-color);
+  }
+  
+  /* .take-quiz label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .take-quiz input[type="radio"] {
+    margin-right: 10px;
+  } */
+  
+  p.score {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--success-color);
+    margin-top: 20px;
+  }
+
+/* Add these styles to your existing styles.css file */
+
+.take-quiz .question label {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .take-quiz .question input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .take-quiz .question label:hover {
+    background-color: var(--accent-color);
+  }
+  
+  .take-quiz .question input[type="radio"]:disabled {
+    opacity: 0.6;
+  }
